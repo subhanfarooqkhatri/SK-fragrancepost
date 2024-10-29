@@ -1,0 +1,480 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(9, 91, 129);
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none;         /* Standard */
+
+}
+/* .option-menu {
+  display: none;
+  position: absolute; */
+  /* top: 30px; */
+  /* left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+} */
+#navbar{
+  /* border: 1px solid; */
+}
+#likeCheckbox:checked + label #likebtn {
+  animation: growAndShrink 0.4s ease;
+}
+label{
+  background-color: white;
+}
+@keyframes growAndShrink {
+  0% { transform: scale(1np); }
+  50% { transform: scale(1.6); }
+  100% { transform: scale(1); }
+}
+#heading{
+  color: white;
+  font-family: monospace;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#input{
+  position: relative;
+  bottom: 26px;
+  left: 900px;
+  border: 2px solid white;
+  height: 20px;
+  margin-right: 20px;
+}
+#loginbtn{
+  position: relative;
+  left: 940px;
+  bottom: 24px;
+  height: 25px;
+  width: 70px;
+  color: white;
+  border: 1px solid white;
+  background-color: rgb(79, 191, 247);
+}
+#signupbtn{
+  position: relative;
+  left: 960px;
+  bottom: 24px;
+  height: 25px;
+  width: 70px;
+  color: white;
+  border: 1px solid white;
+  background-color: rgb(79, 191, 247);
+}
+#loginbtn:hover{
+  cursor: pointer;
+  background-color: rgb(68, 87, 155);
+}
+#signupbtn:hover{
+  cursor: pointer;
+  background-color: rgb(68, 87, 155);
+}
+.post-container {
+  background-color: white;
+  border: 4px solid black;
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  overflow: hidden;
+}
+.post-container > p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    background-color: white;
+}
+.post-photo {
+  width: 100%;
+}
+.dp {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.post-user-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+}
+#likers{
+  position: relative;
+  bottom: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: rgb(235, 225, 225);
+}
+#commenters{
+  font-size: 14px;
+  position: relative;
+  left: 80px;
+  bottom: 6px;
+  cursor: pointer;
+  background-color: rgb(235, 225, 225);
+}
+#like,#comment,#share{
+  position: relative;
+  bottom: 6px;
+  cursor: pointer;
+  background-color: white;
+}
+#like,#comment{
+  margin-right: 70px;
+}
+#secondlast{
+  /* border: 1px solid; */
+  margin-bottom: 10px;
+  background-color: rgb(235, 225, 225);
+  /* background-color: white; */
+}
+#likebtn{
+  cursor: pointer;
+  /* color: blue; */
+background-color: white;
+}
+/* #likebtn:active {
+  color: blue; 
+} */
+#likeCheckbox:checked + label #likebtn {
+  color: rgb(255, 0, 0);
+}
+#likeCheckbox{
+  position: relative;
+  left: 25px;
+  bottom: 4px;
+  height: 20px;
+  width: 15px;
+  opacity: 0;
+  cursor: pointer;
+  /* display: none; */
+
+  /* margin-left: 30px; */
+
+}
+#last{
+  /* border: 1px solid; */
+  /* height: 10px; */
+  /* margin-right: 10px; */
+}
+#commentbtn{
+  background-color: white;
+}
+#sharebtn{
+  background-color: white;
+}
+#username{
+  cursor: pointer;
+  background-color: white;
+}
+#now{
+  background-color: white;
+}
+#userdiv{
+  background-color: white;
+}
+#likericon{
+  background-color: rgb(235, 225, 225);
+}
+@media (max-width: 400px) {
+  .post-container{
+    width: 300px;
+  }
+  #para{
+    font-size: 13px;
+    /* overflow: hidden; */
+  
+  }
+  #likers{
+    position: relative;
+    bottom: 6px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  #commenters{
+    font-size: 12px;
+    position: relative;
+    left: 45px;
+    bottom: 6px;
+    cursor: pointer;
+  }
+  #like,#comment,#share{
+    font-size: 13px;
+  }
+  #like,#comment{
+    margin-right: 40px;
+  }
+}
+#last{
+  background-color: white;
+}
+#navicon{
+  background-color: white;
+}
+@media (min-width: 1040px) and (max-width: 1100px) {
+  #input{
+    position: relative;
+    left: 630px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 650px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 680px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1040px) {
+  #input{
+    position: relative;
+    left: 580px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 610px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 640px;
+  }
+}
+@media (min-width: 970px) and (max-width: 1000px) {
+  #input{
+    position: relative;
+    left: 550px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 590px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 620px;
+  }
+}
+@media (min-width: 930px) and (max-width: 970px) {
+  #input{
+    position: relative;
+    left: 510px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 550px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 580px;
+  }
+}
+@media (min-width: 890px) and (max-width: 930px) {
+  #input{
+    position: relative;
+    left: 470px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 510px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 540px;
+  }
+}
+@media (min-width: 860px) and (max-width: 890px) {
+  #input{
+    position: relative;
+    left: 440px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 480px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 510px;
+  }
+}
+@media (min-width: 825px) and (max-width: 860px) {
+  #input{
+    position: relative;
+    left: 400px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 440px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 470px;
+  }
+}
+@media (min-width: 785px) and (max-width: 825px) {
+  #input{
+    position: relative;
+    left: 360px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 400px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 430px;
+  }
+}
+@media (min-width: 750px) and (max-width: 785px) {
+  #input{
+    position: relative;
+    left: 320px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 360px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 390px;
+  }
+}
+@media (min-width: 710px) and (max-width: 750px) {
+  #input{
+    position: relative;
+    left: 280px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 320px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 350px;
+  }
+}
+@media (min-width: 650px) and (max-width: 710px) {
+  #input{
+    position: relative;
+    left: 250px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 280px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 300px;
+  }
+}
+@media (min-width: 620px) and (max-width: 650px) {
+  #input{
+    position: relative;
+    left: 250px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 250px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 270px;
+  }
+}
+@media (min-width: 500px) and (max-width: 620px) {
+  #input{
+    display: none;
+    /* position: relative;
+    left: 250px; */
+  }
+  #loginbtn{
+    position: relative;
+    left: 300px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 330px;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  #input{
+    display: none;
+    /* position: relative;
+    left: 250px; */
+  }
+  #loginbtn{
+    position: relative;
+    left: 260px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 290px;
+  }
+}
+@media (min-width: 390px) and (max-width: 400px) {
+  #input{
+    display: none;
+    /* position: relative;
+    left: 250px; */
+  }
+  #loginbtn{
+    position: relative;
+    left: 230px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 235px;
+  }
+}
+@media (min-width: 365px) and (max-width: 390px) {
+  #input{
+    display: none;
+    /* position: relative;
+    left: 250px; */
+  }
+  #heading{
+    text-align: center;
+  }
+  #loginbtn{
+    position: relative;
+    left: 120px;
+    top: 10px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 125px;
+    top: 10px;
+  }
+}
+@media (min-width: 300px) and (max-width: 365px) {
+  #input{
+    display: none;
+    /* position: relative;
+    left: 250px; */
+  }
+  #heading{
+    text-align: center;
+  }
+  #loginbtn{
+    position: relative;
+    left: 100px;
+    top: 10px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 105px;
+    top: 10px;
+  }
+}
